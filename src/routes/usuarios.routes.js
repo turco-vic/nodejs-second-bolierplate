@@ -44,7 +44,7 @@ usuariosRoutes.put("/:id", (req, res) => {
   const { id } = req.params;
   const { name, email, password } = req.body;
 
-  const user = usersList.updateUser;
+  const user = usersList.updateUser(id, name, email, password);
 
   if (!user) {
     return res.status(404).json({
