@@ -7,3 +7,5 @@ class UsersRepository {
     return this.users;
   }
 }
+
+export default UsersRepository;
